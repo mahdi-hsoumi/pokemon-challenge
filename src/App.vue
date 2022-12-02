@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="my-container">
     <router-view />
   </div>
 </template>
@@ -12,7 +12,7 @@
   text-align: center;
 }
 
-.container {
+.my-container {
   display: flex;
   justify-content: center;
 }

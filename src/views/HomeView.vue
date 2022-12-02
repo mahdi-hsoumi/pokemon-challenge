@@ -1,5 +1,19 @@
 <template>
   <div class="list">
+    <div>
+      <h1>
+        I want to add Filters and more card details 😭 didn't have enough time
+      </h1>
+    </div>
+    <div class="pagination-container">
+      <pagination
+        v-model="page"
+        :records="records"
+        :per-page="perPage"
+        @paginate="getPokemons"
+        :options="options"
+      />
+    </div>
     <PokemonCard
       v-for="pokemon in pokemons"
       :key="pokemon.name"
